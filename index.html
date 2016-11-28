@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Developing Data Products</title>
   <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Developing Data Products">
+  <meta name="author" content="LB">
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -32,9 +32,9 @@
     <!-- LOGO SLIDE -->
         <slide class="title-slide segue nobackground">
   <hgroup class="auto-fadein">
-    <h1></h1>
+    <h1>Developing Data Products</h1>
     <h2></h2>
-    <p><br/></p>
+    <p>LB<br/></p>
   </hgroup>
   <article></article>  
 </slide>
@@ -43,25 +43,59 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    <h2>Read-And-Delete</h2>
+    <h2>Developing Data Products Course Project</h2>
   </hgroup>
   <article data-timings="">
-    <ol>
-<li>Edit YAML front matter</li>
-<li>Write using R Markdown</li>
-<li>Use an empty line followed by three dashes to separate slides!</li>
-</ol>
+    <h3>Estimating the Perplexity of a Probabilistic Model</h3>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class" id="id" style="background:;">
+<slide class="" id="slide-2" style="background:;">
   <hgroup>
-    <h2>Slide 2</h2>
+    <h2>Perplexity Background</h2>
   </hgroup>
   <article data-timings="">
-    
+    <p>Perplexity is defined as 2 raised to the Cross-Entropy:</p>
+
+<p>2<sup>-logq(x</sup>*q(x))</p>
+
+<p>Perplexity is a measure of how well a model fits some data, used to evaluate e.g., language models and for comparison purposes in various language technology applications.</p>
+
+<p>It is a measure of how surprised the model is to see the data, which means that a lower model fits the data better.  Thus, it is a measure of uncertainty.  If the model is uniform, there is maximum uncertainty.  This is not always intuitive, and I have created an application which can visualize this property.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Perplexity Maximization</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The perplexity is maximized when the events are equiprobable.  This can be shown by means of a mathematical proof.  This application lets the user simulate a number of events (modeled by random numbers), whose frequency determine their probability.  The user can choose an interval from which random numbers will not be selected (say from 40 to 60 in a 1-100 range) to make the distribution of events less equal, while still retaining the property of a probability distribution, namely that the probability of all outcomes sum to one.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <article data-timings="">
+    <p>This gap is controllable by the user:</p>
+
+<p><img src="figure/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <article data-timings="">
+    <p>Application user interface.  The perplexity of the model is updated as the sliders are moved.</p>
+
+<p><img src="appui.png" alt="height"></p>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -72,14 +106,32 @@
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Read-And-Delete'>
+        data-slide=1 title='Developing Data Products Course Project'>
          1
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Slide 2'>
+        data-slide=2 title='Perplexity Background'>
          2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Perplexity Maximization'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='NA'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='NA'>
+         5
       </a>
     </li>
   </ul>
